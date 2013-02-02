@@ -3,11 +3,8 @@ package headfirst.strategy;
 public class MallardDuck extends Duck {
  
 	public MallardDuck() {
- 
-		quackBehavior = new Quack();
-                flyBehavior = new FlyWithWings();
- 
-
+		setQuackBehavior(new Quack());
+        setFlyBehavior(new FlyWithWings());
 	}
  
 	public void display() {
